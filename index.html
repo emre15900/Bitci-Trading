@@ -1,19 +1,563 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/sass.css">
-    <title>My Projects</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/sass.css" />
+    <title>Bitci Trading</title>
   </head>
   <body>
-      
-    <h1>MY PROJECTS</h1>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6 m-0 p-0">
+            <!-- GRAPHIC -->
+            <section class="graphic-section">
+              <div class="container-fluid graphic-fluid">
+                <div class="row">
+                  <div class="col-12 col-lg-12 left-bar">
+                    <div class="row">
+                      <div class="col-md-12 graphic-table">
+                        <div class="data-directive">
+                          <div class="data">
+                            <div class="times">
+                              <span class="time-value" data-filter="one-hour"
+                                >1 SAAT</span
+                              >
+                              <span
+                                class="time-value active"
+                                data-filter="twenty-four-hour"
+                                >24 SAAT</span
+                              >
+                              <span class="time-value" data-filter="one-week"
+                                >1 HAFTA</span
+                              >
+                              <span class="time-value" data-filter="one-month"
+                                >1 AY</span
+                              >
+                              <span class="time-value" data-filter="one-year"
+                                >1 YIL</span
+                              >
+                              <span class="time-value" data-filter="all-time"
+                                >TÜMÜ</span
+                              >
+                            </div>
+                          </div>
+                          <div class="variety">
+                            <div class="times">
+                              <span class="var-trading">Orijinal</span>
+                              <span class="var-trading active"
+                                >TradingView</span
+                              >
+                              <span class="var-trading">Derinlik</span>
+                              <span class="trading-icon"
+                                ><img src="images/fullscreen-icon.svg" alt=""
+                              /></span>
+                              <span class="trading-icon"
+                                ><img src="images/close-icon.svg" alt=""
+                              /></span>
+                            </div>
+                          </div>
+                        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+                        <div class="graphic-screen">
+                          <img
+                            src="images/graphic.png"
+                            alt=""
+                            class="graphic-item one-hour"
+                          />
+                          <img
+                            src="images/graphic.png"
+                            alt=""
+                            class="graphic-item twenty-four-hour"
+                          />
+                          <img
+                            src="images/graphic.png"
+                            alt=""
+                            class="graphic-item one-week"
+                          />
+                          <img
+                            src="images/graphic.png"
+                            alt=""
+                            class="graphic-item one-month"
+                          />
+                          <img
+                            src="images/graphic.png"
+                            alt=""
+                            class="graphic-item one-year"
+                          />
+                          <img
+                            src="images/graphic.png"
+                            alt=""
+                            class="graphic-item all-time"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Buy Sell -->
+            <section class="buy-sell-section">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-5 left-buy-sell">
+                    <div class="buy-sell-hood">
+                      <div class="quantity">
+                        <span class="title">Miktar</span>
+                        <span class="text">(BTC)</span>
+                      </div>
+                      <div class="price">
+                        <span class="title">Fiyat</span>
+                        <span class="text">(TRY)</span>
+                      </div>
+                      <div class="quantity">
+                        <span class="title">Miktar</span>
+                        <span class="text">(BTC)</span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="graphic-view pe-0">
+                        <ul class="buy-sell-ul buy-ul">
+                          <li class="buy-sell-list">
+                            <span class="value">0.004934</span>
+                            <span class="price">145.908</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="value">0.004934</span>
+                            <span class="price">145.908</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="value">0.004934</span>
+                            <span class="price">145.908</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="value">0.004934</span>
+                            <span class="price">145.908</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="value">0.004934</span>
+                            <span class="price">145.908</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="value">0.004934</span>
+                            <span class="price">145.908</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="value">0.004934</span>
+                            <span class="price">145.908</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="value">0.004934</span>
+                            <span class="price">145.908</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="value">0.004934</span>
+                            <span class="price">145.908</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="value">0.004934</span>
+                            <span class="price">145.908</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="value">0.004934</span>
+                            <span class="price">145.908</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="value">0.004934</span>
+                            <span class="price">145.908</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="value">0.004934</span>
+                            <span class="price">145.908</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="value">0.004934</span>
+                            <span class="price">145.908</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="value">0.004934</span>
+                            <span class="price">145.908</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="value">0.004934</span>
+                            <span class="price">145.908</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="value">0.004934</span>
+                            <span class="price">145.908</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="value">0.004934</span>
+                            <span class="price">145.908</span>
+                          </li>
+                        </ul>
+                        <div class="drop-graphic">
+                          <img src="images/drop-graphic.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="graphic-view ps-0">
+                        <ul class="buy-sell-ul sell-ul">
+                          <li class="buy-sell-list">
+                            <span class="drop">145.908</span>
+                            <span class="value">0.004934</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="drop">145.908</span>
+                            <span class="value">0.004934</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="drop">145.908</span>
+                            <span class="value">0.004934</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="drop">145.908</span>
+                            <span class="value">0.004934</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="drop">145.908</span>
+                            <span class="value">0.004934</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="drop">145.908</span>
+                            <span class="value">0.004934</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="drop">145.908</span>
+                            <span class="value">0.004934</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="drop">145.908</span>
+                            <span class="value">0.004934</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="drop">145.908</span>
+                            <span class="value">0.004934</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="drop">145.908</span>
+                            <span class="value">0.004934</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="drop">145.908</span>
+                            <span class="value">0.004934</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="drop">145.908</span>
+                            <span class="value">0.004934</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="drop">145.908</span>
+                            <span class="value">0.004934</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="drop">145.908</span>
+                            <span class="value">0.004934</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="drop">145.908</span>
+                            <span class="value">0.004934</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="drop">145.908</span>
+                            <span class="value">0.004934</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="drop">145.908</span>
+                            <span class="value">0.004934</span>
+                          </li>
+                          <li class="buy-sell-list">
+                            <span class="drop">145.908</span>
+                            <span class="value">0.004934</span>
+                          </li>
+                        </ul>
+                        <div class="rise-graphic">
+                          <img src="images/rise-graphic.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-7 right-buy-sell">
+                    <div class="row">
+                      <div class="col-4 pe-0">
+                        <div class="best-hoods">
+                          <span class="best-icons"
+                            ><img src="images/exchange-line.svg" alt=""
+                          /></span>
+                          <span class="text">En Çok Alış</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                      </div>
+                      <div class="col-4 pe-0">
+                        <div class="best-hoods">
+                          <span class="best-icons"
+                            ><img src="images/exchange-line.svg" alt=""
+                          /></span>
+                          <span class="text">En Çok Satış</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                      </div>
+                      <div class="col-4 pe-0">
+                        <div class="best-hoods">
+                          <span class="best-icons"
+                            ><img src="images/exchange-line.svg" alt=""
+                          /></span>
+                          <span class="text">Hacim Liderleri</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                        <div class="best-value">
+                          <div class="firstline">
+                            <span class="firstname">1. Cenk Demir</span>
+                            <span class="number">14.569</span>
+                          </div>
+                          <span class="value">2.779.753.863,46 </span>
+                          <span class="price">682.277.053 ₺</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="row">
+              <div class="col-4 p-0">
+                <div class="coin-exchange">
+                  <div class="coin-hood">
+                    <span class="bitci-exchange">
+                      <img src="images/bitci-logo.svg" alt="" />
+                      <span class="title">BITCI</span>
+                      <img src="images/exchange.png" class="exchange-icon" alt="" />
+                    </span>
+                    <span class="price">0,4568 <small>₺</small></span>
+                  </div>
+                  <span class="price-dollar">0.0545 $</span>
+                  <div class="data">
+                    <span class="volume">24s Hacim</span>
+                    <span class="btc">0.00000145 BTC</span>
+                  </div>
+                  <div class="data-price">
+                    <div class="volume-price">
+                      <span class="value">64.745.965</span>
+                      <span class="liras">24.745.965 ₺</span>
+                    </div>
+                    <div class="percentile">
+                      <span class="drop">+%23,67</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="wallets">
+                  a
+                </div>
+              </div>
+              <div class="col-8">b</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
     <script src="javascript/javascript.js"></script>
-
   </body>
 </html>
