@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   --gray-color: #5e5e5e;
   --soft-gray-color: #9b9b9b;
@@ -9,10 +10,13 @@
   --green-color: #03a66d;
   --red-color: #b7291e;
   --border-color: #e9e9e9;
+  --drop-color: #d94444;
+  --progress-color: #707070;
 }
 
 body {
   background: var(--smoke-color);
+  font-family: "Inter", sans-serif;
 }
 
 /* ===== GRAPHIC ===== */
@@ -500,6 +504,7 @@ body {
 }
 
 .coin-exchange {
+  margin-top: 5px;
   padding: 15px 17px;
   background: var(--white-color);
 }
@@ -617,12 +622,641 @@ body {
   color: var(--soft-gray-color);
 }
 
-.coin-exchange .percentile {
+.coin-exchange .data-price .percentile {
   padding: 4px 10px;
   background: var(--green-color);
   color: var(--white-color);
   font-weight: 600;
   font-size: 16px;
   border-radius: 5px;
+}
+
+.wallets {
+  margin: 5px 0;
+  background: var(--white-color);
+}
+
+.wallets .best-hoods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.wallets .best-hoods .left-hood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wallets .best-hoods .left-hood .text {
+  font-size: 12px;
+  color: var(--soft-gray-color);
+  margin-left: 4px;
+}
+
+.wallets .best-hoods .right-hood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wallets .best-hoods .right-hood .text {
+  font-size: 12px;
+  color: var(--soft-gray-color);
+}
+
+.wallets .best-hoods .right-hood .text .active {
+  font-size: 12px;
+  color: var(--green-color);
+  margin-right: 9px;
+}
+
+.wallets .best-hoods .right-hood .text .passive {
+  font-size: 12px;
+  color: var(--drop-color);
+}
+
+.wallets .cold-wallet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.wallets .cold-wallet .left-hood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wallets .cold-wallet .left-hood .text {
+  color: var(--soft-gray-color);
+  font-size: 12px;
+}
+
+.wallets .cold-wallet .left-hood .number {
+  font-size: 16px;
+  color: var(--black-color);
+}
+
+.wallets .cold-wallet .left-hood .drop {
+  color: var(--drop-color);
+}
+
+.wallets .cold-wallet .left-hood .rise {
+  color: var(--green-color);
+}
+
+.wallets .cold-wallet .right-hood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wallets .cold-wallet .right-hood .text {
+  color: var(--soft-gray-color);
+  font-size: 12px;
+}
+
+.wallets .cold-wallet .right-hood .number {
+  font-size: 14px;
+  color: var(--black-color);
+}
+
+.wallets .cold-wallet .right-hood .drop {
+  color: var(--drop-color);
+}
+
+.wallets .cold-wallet .right-hood .rise {
+  color: var(--green-color);
+}
+
+.deposit-take {
+  margin: 5px 0;
+  background: var(--white-color);
+}
+
+.deposit-take .best-hoods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.deposit-take .best-hoods .left-hood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.deposit-take .best-hoods .left-hood .text {
+  font-size: 12px;
+  color: var(--soft-gray-color);
+  margin-left: 4px;
+}
+
+.deposit-take .best-hoods .right-hood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.deposit-take .best-hoods .right-hood .text {
+  font-size: 12px;
+  color: var(--soft-gray-color);
+}
+
+.deposit-take .cold-wallet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+.deposit-take .cold-wallet .left-hood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.deposit-take .cold-wallet .left-hood .deposit {
+  color: var(--green-color);
+  font-size: 14px;
+}
+
+.deposit-take .cold-wallet .left-hood .number {
+  font-size: 16px;
+  color: var(--black-color);
+}
+
+.deposit-take .cold-wallet .right-hood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.deposit-take .cold-wallet .right-hood .take {
+  color: var(--drop-color);
+  font-size: 14px;
+}
+
+.deposit-take .cold-wallet .right-hood .number {
+  font-size: 16px;
+  color: var(--black-color);
+}
+
+.deposit-take .cold-wallet .difference {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.deposit-take .cold-wallet .difference .text {
+  color: var(--black-color);
+  font-size: 14px;
+}
+
+.deposit-take .cold-wallet .difference .number {
+  font-size: 16px;
+  color: var(--black-color);
+}
+
+.deposit-take .cold-wallet .difference .drop {
+  color: var(--drop-color);
+}
+
+.deposit-take .cold-wallet .difference .rise {
+  color: var(--green-color);
+}
+
+.table-deposit-take .take {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.table-deposit-take .best-hoods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 11px 2px;
+  background: var(--white-color);
+  border-bottom: 1px solid var(--border-color);
+  border-radius: 5px 5px 0 0;
+}
+
+.table-deposit-take .best-hoods .best-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.table-deposit-take .best-hoods .best-icons img {
+  margin-right: 3px;
+  width: 20px;
+}
+
+.table-deposit-take .best-hoods .text {
+  color: var(--soft-gray-color);
+  font-size: 12px;
+}
+
+.table-deposit-take .best-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: var(--white-color);
+  padding: 9px 6px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.table-deposit-take .best-value .firstline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.table-deposit-take .best-value .firstline .firstname {
+  font-size: 14px;
+  color: var(--black-color);
+}
+
+.table-deposit-take .best-value .firstline .number {
+  font-size: 12px;
+  color: #929292;
+}
+
+.table-deposit-take .best-value .value {
+  font-size: 16px;
+  color: var(--black-color);
+}
+
+.table-deposit-take .best-value .price {
+  font-size: 14px;
+  color: #929292;
+}
+
+.market-cap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--white-color);
+  padding: 14px 1px;
+  margin-top: 5px;
+}
+
+.market-cap .widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-right: 25px;
+  border-right: 1px solid var(--border-color);
+}
+
+.market-cap .widget:last-child {
+  border: none;
+}
+
+.market-cap .widget .title {
+  font-size: 12px;
+  color: var(--soft-gray-color);
+}
+
+.market-cap .widget .value {
+  font-size: 16px;
+  color: var(--black-color);
+}
+
+.market-cap .widget .percentile {
+  font-size: 12px;
+}
+
+.market-cap .widget .rise {
+  color: var(--green-color);
+}
+
+.market-cap .widget .drop {
+  color: var(--drop-color);
+}
+
+.market-cap .widget .progress-bar {
+  margin-top: 10px;
+  width: 100%;
+  height: 5px;
+  background: #f6f6f6;
+  border-radius: 10px;
+  position: relative;
+}
+
+.market-cap .widget .progress-bar::before {
+  content: "";
+  width: 40%;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: var(--progress-color);
+  border-radius: 10px;
+}
+
+.price-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--white-color);
+  padding: 8px 26px;
+  margin: 5px 0;
+}
+
+.price-info .price {
+  font-size: 12px;
+  color: var(--black-color);
+  font-weight: 700;
+}
+
+.price-info .time {
+  font-size: 12px;
+  color: var(--soft-gray-color);
+  border-left: 1px solid var(--border-color);
+  padding-left: 15px;
+}
+
+.price-info .progress-bar {
+  width: 60%;
+  height: 5px;
+  background: #f6f6f6;
+  border-radius: 10px;
+  position: relative;
+}
+
+.price-info .progress-bar::before {
+  content: "";
+  width: 30%;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: var(--progress-color);
+  border-radius: 10px;
+}
+
+.bitci-table-value .hood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--white-color);
+  padding: 8px 26px;
+  margin-top: 5px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.bitci-table-value .hood .title {
+  font-size: 12px;
+  color: var(--soft-gray-color);
+}
+
+.bitci-table-value ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.bitci-table-value ul .table-list {
+  border-bottom: 1px solid var(--border-color);
+  background: var(--white-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 13px;
+}
+
+.bitci-table-value ul .table-list .text {
+  font-size: 14px;
+  color: var(--black-color);
+}
+
+.bitci-table-value ul .table-list .text:first-child {
+  font-weight: 700;
+}
+
+.bitci-table-value ul .table-list .text img {
+  width: 30%;
+}
+
+.transactions-number {
+  margin-top: 5px;
+}
+
+.transactions-number .best-hoods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 11px 2px;
+  background: var(--white-color);
+  border-bottom: 1px solid var(--border-color);
+  border-radius: 5px 5px 0 0;
+}
+
+.transactions-number .best-hoods .best-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.transactions-number .best-hoods .best-icons img {
+  margin-right: 3px;
+  width: 20px;
+}
+
+.transactions-number .best-hoods .text {
+  color: var(--soft-gray-color);
+  font-size: 12px;
+}
+
+.transactions-number .best-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: var(--white-color);
+  padding: 9px 6px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.transactions-number .best-value .firstline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.transactions-number .best-value .firstline .firstname {
+  font-size: 14px;
+  color: var(--black-color);
+}
+
+.transactions-number .best-value .firstline .number {
+  font-size: 12px;
+  color: #929292;
+}
+
+.transactions-number .best-value .value {
+  font-size: 16px;
+  color: var(--black-color);
+}
+
+.transactions-number .best-value .price {
+  font-size: 14px;
+  color: #929292;
 }
 /*# sourceMappingURL=sass.css.map */
