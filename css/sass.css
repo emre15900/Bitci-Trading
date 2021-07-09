@@ -17,11 +17,12 @@
 body {
   background: var(--smoke-color);
   font-family: "Inter", sans-serif;
+  overflow-y: hidden;
 }
 
 /* ===== GRAPHIC ===== */
 .graphic-section {
-  margin: 5px 0;
+  margin-bottom: 5px;
   border-radius: 5px;
 }
 
@@ -39,7 +40,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   padding: 0 10px;
 }
 
@@ -129,10 +130,15 @@ body {
   background: var(--active-bg);
 }
 
+.graphic-section .left-bar .graphic-table .graphic-screen {
+  max-height: 330px;
+}
+
 .graphic-section .left-bar .graphic-table .graphic-screen img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  max-height: 330px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .graphic-section .left-bar .analytic-data {
@@ -274,7 +280,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: var(--white-color);
-  padding: 9px 10px;
+  padding: 0 10px;
   margin: 0;
 }
 
@@ -369,7 +375,7 @@ body {
   padding: 0;
   list-style: none;
   background: var(--white-color);
-  padding: 12px 15px;
+  padding: 2px 15px 0 15px;
 }
 
 .buy-sell-section .left-buy-sell .graphic-view .buy-sell-ul .buy-sell-list {
@@ -404,7 +410,7 @@ body {
 .buy-sell-section .left-buy-sell .graphic-view .drop-graphic {
   background: var(--white-color);
   border-radius: 5px 0 0 5px;
-  padding: 38px 0 0 0;
+  padding: 15px 0 0 0;
   margin: 10px 0;
 }
 
@@ -415,7 +421,7 @@ body {
 .buy-sell-section .left-buy-sell .graphic-view .rise-graphic {
   background: var(--white-color);
   border-radius: 0 5px 5px 0;
-  padding: 38px 0 0 0;
+  padding: 15px 0 0 0;
   margin: 10px 0;
 }
 
@@ -430,7 +436,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 11px 2px;
+  padding: 6px 2px;
   background: var(--white-color);
   border-bottom: 1px solid var(--border-color);
   border-radius: 5px 5px 0 0;
@@ -467,7 +473,7 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   background: var(--white-color);
-  padding: 9px 6px;
+  padding: 1px 6px;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -504,8 +510,7 @@ body {
 }
 
 .coin-exchange {
-  margin-top: 5px;
-  padding: 15px 17px;
+  padding: 6px 17px;
   background: var(--white-color);
 }
 
@@ -646,7 +651,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+  padding: 6px 10px;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -706,7 +711,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+  padding: 3.5px 10px;
 }
 
 .wallets .cold-wallet .left-hood {
@@ -780,7 +785,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+  padding: 6px 10px;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -837,7 +842,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 10px;
+  padding: 4px 10px;
 }
 
 .deposit-take .cold-wallet .left-hood {
@@ -923,7 +928,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 11px 2px;
+  padding: 6px 2px;
   background: var(--white-color);
   border-bottom: 1px solid var(--border-color);
   border-radius: 5px 5px 0 0;
@@ -960,7 +965,7 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   background: var(--white-color);
-  padding: 9px 6px;
+  padding: 1px 6px;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -1007,8 +1012,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: var(--white-color);
-  padding: 14px 1px;
-  margin-top: 5px;
+  padding: 7px 1px;
 }
 
 .market-cap .widget {
@@ -1152,7 +1156,7 @@ span.best-icons {
       -ms-flex-align: center;
           align-items: center;
   background: var(--white-color);
-  padding: 8px 26px;
+  padding: 6px 26px;
   margin-top: 5px;
   border-bottom: 1px solid var(--border-color);
 }
@@ -1180,7 +1184,7 @@ span.best-icons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 13px;
+  padding: 7px 13px;
 }
 
 .bitci-table-value ul .table-list .text {
@@ -1207,7 +1211,7 @@ span.best-icons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 11px 2px;
+  padding: 6px 2px;
   background: var(--white-color);
   border-bottom: 1px solid var(--border-color);
   border-radius: 5px 5px 0 0;
@@ -1244,7 +1248,7 @@ span.best-icons {
       -ms-flex-pack: start;
           justify-content: flex-start;
   background: var(--white-color);
-  padding: 9px 6px;
+  padding: 1px 6px;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -1302,7 +1306,7 @@ span.best-icons {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid var(--border-color);
-  padding: 10px 17px;
+  padding: 6px 17px;
 }
 
 .open-order .hood .text {
@@ -1319,7 +1323,7 @@ span.best-icons {
       -ms-flex-direction: column;
           flex-direction: column;
   border-bottom: 1px solid var(--border-color);
-  padding: 10px 17px;
+  padding: 4px 17px;
 }
 
 .open-order .orders .title {
@@ -1346,7 +1350,7 @@ span.best-icons {
       -ms-flex-direction: column;
           flex-direction: column;
   border-bottom: 1px solid var(--border-color);
-  padding: 10px 17px;
+  padding: 4px 17px;
 }
 
 .open-order .sales .title {
@@ -1377,7 +1381,7 @@ span.best-icons {
 .open-order .difference .title {
   font-size: 14px;
   color: var(--black-color);
-  padding: 10px 17px 0 17px;
+  padding: 3px 17px 0 17px;
 }
 
 .open-order .difference .number {
@@ -1387,7 +1391,7 @@ span.best-icons {
 }
 
 .open-order .difference .price {
-  padding: 0 17px 30px 17px;
+  padding: 0 17px 6px 17px;
   font-size: 14px;
   color: var(--soft-gray-color);
 }
@@ -1401,7 +1405,7 @@ span.best-icons {
       -ms-flex-direction: column;
           flex-direction: column;
   border-bottom: 1px solid var(--border-color);
-  padding: 5px 17px;
+  padding: 0 17px;
   background: var(--white-color);
   margin: 5px 0;
 }
@@ -1409,7 +1413,7 @@ span.best-icons {
 .calendar .text {
   font-size: 16px;
   color: var(--black-color);
-  padding: 10px 0;
+  padding: 7px 0;
   border-bottom: 1px solid var(--border-color);
   position: relative;
 }

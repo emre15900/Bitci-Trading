@@ -17,11 +17,12 @@
 body {
   background: var(--smoke-color);
   font-family: "Inter", sans-serif;
+  overflow-y: hidden;
 }
 
 /* ===== GRAPHIC ===== */
 .graphic-section {
-  margin: 5px 0;
+  margin-bottom: 5px;
   border-radius: 5px;
   .graphic-fluid {
     margin: 0;
@@ -29,7 +30,7 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 20px;
+      margin-bottom: 5px;
       padding: 0 10px;
       .variety {
         display: flex;
@@ -94,9 +95,11 @@ body {
         }
       }
       .graphic-screen {
+        max-height: 330px;
         img {
           width: 100%;
-          object-fit: contain;
+          max-height: 330px;
+          object-fit: cover;
         }
       }
     }
@@ -228,7 +231,7 @@ body {
       justify-content: space-between;
       align-items: center;
       background: var(--white-color);
-      padding: 9px 10px;
+      padding: 0 10px;
       margin: 0;
       .quantity {
         display: flex;
@@ -297,7 +300,7 @@ body {
         padding: 0;
         list-style: none;
         background: var(--white-color);
-        padding: 12px 15px;
+        padding: 2px 15px 0 15px;
         .buy-sell-list {
           display: flex;
           justify-content: space-between;
@@ -321,7 +324,7 @@ body {
       .drop-graphic {
         background: var(--white-color);
         border-radius: 5px 0 0 5px;
-        padding: 38px 0 0 0;
+        padding: 15px 0 0 0;
         margin: 10px 0;
         img {
           width: 100%;
@@ -330,7 +333,7 @@ body {
       .rise-graphic {
         background: var(--white-color);
         border-radius: 0 5px 5px 0;
-        padding: 38px 0 0 0;
+        padding: 15px 0 0 0;
         margin: 10px 0;
         img {
           width: 100%;
@@ -342,7 +345,7 @@ body {
     .best-hoods {
       display: flex;
       align-items: center;
-      padding: 11px 2px;
+      padding: 6px 2px;
       background: var(--white-color);
       border-bottom: 1px solid var(--border-color);
       border-radius: 5px 5px 0 0;
@@ -364,7 +367,7 @@ body {
       flex-direction: column;
       justify-content: flex-start;
       background: var(--white-color);
-      padding: 9px 6px;
+      padding: 1px 6px;
       border-bottom: 1px solid var(--border-color);
 
       .firstline {
@@ -393,8 +396,7 @@ body {
 }
 
 .coin-exchange {
-  margin-top: 5px;
-  padding: 15px 17px;
+  padding: 6px 17px;
   background: var(--white-color);
   .coin-hood {
     display: flex;
@@ -475,7 +477,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 6px 10px;
     border-bottom: 1px solid var(--border-color);
     .left-hood {
       display: flex;
@@ -511,7 +513,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 3.5px 10px;
     .left-hood {
       display: flex;
       flex-direction: column;
@@ -558,7 +560,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 6px 10px;
     border-bottom: 1px solid var(--border-color);
     .left-hood {
       display: flex;
@@ -591,7 +593,7 @@ body {
   .cold-wallet {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 4px 10px;
     .left-hood {
       display: flex;
       justify-content: space-between;
@@ -646,7 +648,7 @@ body {
   .best-hoods {
     display: flex;
     align-items: center;
-    padding: 11px 2px;
+    padding: 6px 2px;
     background: var(--white-color);
     border-bottom: 1px solid var(--border-color);
     border-radius: 5px 5px 0 0;
@@ -668,7 +670,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     background: var(--white-color);
-    padding: 9px 6px;
+    padding: 1px 6px;
     border-bottom: 1px solid var(--border-color);
 
     .firstline {
@@ -700,8 +702,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   background: var(--white-color);
-  padding: 14px 1px;
-  margin-top: 5px;
+  padding: 7px 1px;
   .widget {
     display: flex;
     flex-direction: column;
@@ -808,7 +809,7 @@ span{
     justify-content: space-between;
     align-items: center;
     background: var(--white-color);
-    padding: 8px 26px;
+    padding: 6px 26px;
     margin-top: 5px;
     border-bottom: 1px solid var(--border-color);
     .title {
@@ -826,7 +827,7 @@ span{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 13px;
+      padding: 7px 13px;
       .text {
         font-size: 14px;
         color: var(--black-color);
@@ -846,7 +847,7 @@ span{
   .best-hoods {
     display: flex;
     align-items: center;
-    padding: 11px 2px;
+    padding: 6px 2px;
     background: var(--white-color);
     border-bottom: 1px solid var(--border-color);
     border-radius: 5px 5px 0 0;
@@ -868,7 +869,7 @@ span{
     flex-direction: column;
     justify-content: flex-start;
     background: var(--white-color);
-    padding: 9px 6px;
+    padding: 1px 6px;
     border-bottom: 1px solid var(--border-color);
 
     .firstline {
@@ -904,7 +905,7 @@ span{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--border-color);
-    padding: 10px 17px;
+    padding: 6px 17px;
     .text {
       font-size: 12px;
       color: var(--soft-gray-color);
@@ -914,7 +915,7 @@ span{
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid var(--border-color);
-    padding: 10px 17px;
+    padding: 4px 17px;
     .title {
       font-size: 14px;
       color: var(--green-color);
@@ -932,7 +933,7 @@ span{
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid var(--border-color);
-    padding: 10px 17px;
+    padding: 4px 17px;
     .title {
       font-size: 14px;
       color: var(--drop-color);
@@ -952,7 +953,7 @@ span{
     .title {
       font-size: 14px;
       color: var(--black-color);
-      padding: 10px 17px 0 17px;
+      padding: 3px 17px 0 17px;
     }
     .number {
       font-size: 18px;
@@ -960,7 +961,7 @@ span{
       padding: 0 17px;
     }
     .price {
-      padding: 0 17px 30px 17px;
+      padding: 0 17px 6px 17px;
       font-size: 14px;
       color: var(--soft-gray-color);
     }
@@ -971,13 +972,13 @@ span{
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid var(--border-color);
-  padding: 5px 17px;
+  padding: 0 17px;
   background: var(--white-color);
   margin: 5px 0;
   .text {
     font-size: 16px;
     color: var(--black-color);
-    padding: 10px 0;
+    padding: 7px 0;
     border-bottom: 1px solid var(--border-color);
     position: relative;
     &:last-child{
