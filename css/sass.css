@@ -1259,4 +1259,147 @@ body {
   font-size: 14px;
   color: #929292;
 }
+
+.open-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: var(--white-color);
+}
+
+.open-order .hood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px 17px;
+}
+
+.open-order .hood .text {
+  font-size: 12px;
+  color: var(--soft-gray-color);
+}
+
+.open-order .orders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px 17px;
+}
+
+.open-order .orders .title {
+  font-size: 14px;
+  color: var(--green-color);
+}
+
+.open-order .orders .number {
+  font-size: 18px;
+  color: var(--black-color);
+}
+
+.open-order .orders .price {
+  font-size: 14px;
+  color: var(--soft-gray-color);
+}
+
+.open-order .sales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px 17px;
+}
+
+.open-order .sales .title {
+  font-size: 14px;
+  color: var(--drop-color);
+}
+
+.open-order .sales .number {
+  font-size: 18px;
+  color: var(--black-color);
+}
+
+.open-order .sales .price {
+  font-size: 14px;
+  color: var(--soft-gray-color);
+}
+
+.open-order .difference {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.open-order .difference .title {
+  font-size: 14px;
+  color: var(--black-color);
+  padding: 10px 17px 0 17px;
+}
+
+.open-order .difference .number {
+  font-size: 18px;
+  color: var(--black-color);
+  padding: 0 17px;
+}
+
+.open-order .difference .price {
+  padding: 0 17px 30px 17px;
+  font-size: 14px;
+  color: var(--soft-gray-color);
+}
+
+.calendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid var(--border-color);
+  padding: 5px 17px;
+  background: var(--white-color);
+  margin: 5px 0;
+}
+
+.calendar .text {
+  font-size: 16px;
+  color: var(--black-color);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+}
+
+.calendar .text:last-child {
+  border: none;
+}
+
+.calendar .text .right-line {
+  position: absolute;
+  right: 0;
+}
 /*# sourceMappingURL=sass.css.map */
