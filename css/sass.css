@@ -819,6 +819,16 @@ body {
   color: var(--soft-gray-color);
 }
 
+.deposit-take .best-hoods .right-hood select {
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.deposit-take .best-hoods .right-hood select option {
+  background: #ddd;
+}
+
 .deposit-take .cold-wallet {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1119,6 +1129,28 @@ body {
   bottom: 0;
   background: var(--progress-color);
   border-radius: 10px;
+}
+
+.price-info select {
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.price-info select option {
+  background: #ddd;
+}
+
+span.best-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .bitci-table-value .hood {

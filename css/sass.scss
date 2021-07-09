@@ -503,6 +503,7 @@ body {
           font-size: 12px;
           color: var(--drop-color);
         }
+        
       }
     }
   }
@@ -576,6 +577,14 @@ body {
       .text {
         font-size: 12px;
         color: var(--soft-gray-color);
+      }
+      select{
+        border: none;
+        outline: none;
+        font-size: 14px;
+        option{
+          background: #ddd;
+        }
       }
     }
   }
@@ -779,6 +788,22 @@ body {
       background: var(--progress-color);
       border-radius: 10px;
     }
+  }
+  select{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    option{
+      background: #ddd;
+    }
+  }
+}
+
+span{
+  &.best-icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 }
 
