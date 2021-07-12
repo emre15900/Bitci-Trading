@@ -14,10 +14,26 @@
   --progress-color: #707070;
 }
 
+/*scrollbar theme*/
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e8e8e8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(45deg, var(--soft-gray-color), var(--gray-color));
+}
+
 body {
   background: var(--smoke-color);
   font-family: "Inter", sans-serif;
-  overflow-y: hidden;
 }
 
 /* ===== GRAPHIC ===== */
@@ -40,8 +56,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 5px;
-  padding: 0 10px;
+  margin-bottom: 15px;
+  padding: 0 10px 15px 10px;
 }
 
 .graphic-section .graphic-fluid .data-directive .variety {
@@ -90,7 +106,7 @@ body {
   display: block;
   background: #ffffff;
   padding: 20px 0 0 0;
-  margin: 0;
+  margin: 5px 0 0 0;
 }
 
 .graphic-section .left-bar .graphic-table .data {
@@ -280,7 +296,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: var(--white-color);
-  padding: 0 10px;
+  padding: 5px 10px;
   margin: 0;
 }
 
@@ -375,7 +391,7 @@ body {
   padding: 0;
   list-style: none;
   background: var(--white-color);
-  padding: 2px 15px 0 15px;
+  padding: 10px 15px 0 15px;
 }
 
 .buy-sell-section .left-buy-sell .graphic-view .buy-sell-ul .buy-sell-list {
@@ -473,7 +489,7 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   background: var(--white-color);
-  padding: 1px 6px;
+  padding: 6px 6px;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -965,7 +981,7 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   background: var(--white-color);
-  padding: 1px 6px;
+  padding: 10px 6px;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -1013,6 +1029,7 @@ body {
           align-items: center;
   background: var(--white-color);
   padding: 7px 1px;
+  margin-top: 5px;
 }
 
 .market-cap .widget {
@@ -1248,7 +1265,7 @@ span.best-icons {
       -ms-flex-pack: start;
           justify-content: flex-start;
   background: var(--white-color);
-  padding: 1px 6px;
+  padding: 6px 6px;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -1323,7 +1340,7 @@ span.best-icons {
       -ms-flex-direction: column;
           flex-direction: column;
   border-bottom: 1px solid var(--border-color);
-  padding: 4px 17px;
+  padding: 17px;
 }
 
 .open-order .orders .title {
@@ -1350,7 +1367,7 @@ span.best-icons {
       -ms-flex-direction: column;
           flex-direction: column;
   border-bottom: 1px solid var(--border-color);
-  padding: 4px 17px;
+  padding: 17px;
 }
 
 .open-order .sales .title {
@@ -1381,7 +1398,7 @@ span.best-icons {
 .open-order .difference .title {
   font-size: 14px;
   color: var(--black-color);
-  padding: 3px 17px 0 17px;
+  padding: 17px 17px 0 17px;
 }
 
 .open-order .difference .number {
@@ -1391,7 +1408,7 @@ span.best-icons {
 }
 
 .open-order .difference .price {
-  padding: 0 17px 6px 17px;
+  padding: 0 17px 35px 17px;
   font-size: 14px;
   color: var(--soft-gray-color);
 }
@@ -1425,5 +1442,20 @@ span.best-icons {
 .calendar .text .right-line {
   position: absolute;
   right: 0;
+}
+
+.table-ul {
+  max-height: 345px;
+  overflow-y: scroll;
+}
+
+.best-scrool {
+  max-height: 635px;
+  overflow-y: scroll;
+}
+
+.best-scrool-small {
+  max-height: 525px;
+  overflow-y: scroll;
 }
 /*# sourceMappingURL=sass.css.map */
