@@ -25,5 +25,4 @@ $(document).ready(function () {
   $(".var-trading").on("click", function () {
     $(this).addClass("active").siblings().removeClass("active");
   });
-
 });
