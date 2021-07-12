@@ -404,6 +404,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1.5px 0;
 }
 
 .buy-sell-section .left-buy-sell .graphic-view .buy-sell-ul .buy-sell-list .value {
@@ -528,6 +529,7 @@ body {
 .coin-exchange {
   padding: 6px 17px;
   background: var(--white-color);
+  margin-top: 5px;
 }
 
 .coin-exchange .coin-hood {
